@@ -10,33 +10,31 @@
 </head>
 <body>
   
-  <div class="row">
-      <div class="row resultado">
-        <div id="resultadoLista" class="resultadoLista">&nbsp;</div>
-        <div id="resultadoTotal" class="resultadoTotal">0</div>
-      </div>
+  <div class="resultado">
+    <div id="resultadoLista" class="resultadoLista">&nbsp;</div>
+    <div id="resultadoTotal" class="resultadoTotal">0</div>
   </div>
 
-  <div class="row">
-      <div class="row">
+  <div class="grid">
+      <div class="row sinMarginBottom">
           <button onclick="addNumero(1)">1</button>
           <button onclick="addNumero(2)">2</button>
           <button onclick="addNumero(3)">3</button>
           <button onclick="agregarOperador('+')">+</button>
       </div>
-      <div class="row">
+      <div class="row sinMarginBottom">
           <button onclick="addNumero(4)">4</button>
           <button onclick="addNumero(5)">5</button>
           <button onclick="addNumero(6)">6</button>
           <button onclick="agregarOperador('-')">-</button>
       </div>
-      <div class="row">
+      <div class="row sinMarginBottom">
           <button onclick="addNumero(7)">7</button>
           <button onclick="addNumero(8)">8</button>
           <button onclick="addNumero(9)">9</button>
           <button onclick="agregarOperador('*')">*</button>
       </div>
-      <div class="row">
+      <div class="row sinMarginBottom">
           <button onclick="addNumero('.')">.</button>
           <button onclick="addNumero(0)">0</button>
           <button onclick="calcular()">=</button>

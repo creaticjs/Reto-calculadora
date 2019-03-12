@@ -1,24 +1,41 @@
 * {
-  font-display: 'Helvetica';
+  font-family: Impact;
+  color: #D9DCD6;
+}
+
+body {
+  background-color: #81C3D7;
+}
+
+.grid {
+  display: block;
+
 }
 
 .row {
   margin: 15px;
+  width: 100%;
+  display: flex;
 }
 
 button {
-  background-color: cornflowerblue;
-  font: white;
+  border: 0px;
+  background-color: #3A7CA5;
   font-size: 20px;
-  font-weight: 600;
-  width: 60px;
+  /*width: 60px;*/
+  margin: 1%;
+  width: 100%;
   height: 60px;
 }
 
 .resultado {
-  background-color: cornflowerblue;
-  width: 90%;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block;
+  background-color: #2F6690;
+  width: 100%;
   height: 60px;
+  margin: 19px;
 }
 
 .resultadoLista {
@@ -28,4 +45,52 @@ button {
 .resultadoTotal {
   font-size: 1.5em;
   text-align: end;
+}
+
+
+@media screen and (max-width:640px) {
+  /* reglas CSS */
+  .grid {
+    width: 92%;
+  }
+
+  .resultado {
+    width: 87%;
+    height: 60px;
+  }
+}
+@media screen and (max-width:1024px) and (min-width:640px) {
+  /* reglas CSS */
+  .grid .row {
+    margin: 0px;
+  }
+
+  button {
+    width: 100%;
+    height: 80px;
+  }
+  .resultado {
+    width: 96%;
+    height: 70px;
+    margin: 9px;
+  }
+}
+@media screen and (min-width:1024px) {
+  /* reglas CSS */
+  
+  button {
+    width: 100%;
+    height: 100px;
+  }
+
+  .sinMarginBottom {
+    margin-bottom: 0px;
+  }
+
+  
+  .resultado {
+    width: 97%;
+    height: 80px;
+    margin: 24px;
+  }
 }
